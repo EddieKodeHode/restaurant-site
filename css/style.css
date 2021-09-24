@@ -6,6 +6,11 @@ body {
     font-family: 'Koh Santepheap', cursive;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://i.imgur.com/yspHSgq.jpg);
+    background-size: fill;
+    background-position: -500px -150px;
 }
 
 /* TITLE */
@@ -13,6 +18,7 @@ body {
 header {
     width: 100%;
     height: 12em;
+    z-index: 3
 }
 
 .title {
@@ -73,6 +79,7 @@ main {
     background-color: rgba(0,0,0,0.4);
     padding: 1em;
     margin-bottom: 3em;
+    z-index: 2;
 }
 
 
@@ -85,6 +92,7 @@ footer {
     bottom: 0;
     justify-content: space-between;
     background-color: rgb(0,0,0);
+    z-index: 4;
 }
 
 footer p {
