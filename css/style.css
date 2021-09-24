@@ -8,9 +8,11 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-image: url(https://i.imgur.com/yspHSgq.jpg);
+    background-image: url(../images/food.png);
     background-size: fill;
     background-position: -500px -150px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @media (min-width: 576px) {
@@ -86,6 +88,45 @@ nav a {
     
     .title {
         padding: 0.5em 2em;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+    nav li {
+        background-image: url(../images/redbanner.png);
+        background-size: cover;
+        background-position: 0 -55px;
+        background-repeat: no-repeat;
+        list-style-type: none;
+        width: 40px;
+        height: 50%;
+        transition: 0.5s;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+    }
+
+    #current {
+        background-image: url(../images/greenbanner.png);
+    }
+
+    nav li:hover,
+    nav li:focus {
+        background-position: 0 -5px;
+    }
+
+    nav p {
+        font-weight: bold;
+        text-align: end;
+        position: relative;
+        top: -70px;
+        transition: 0.5s;
+    }
+    
+    nav li:hover p {
+        top: -20px;
+        transition: 0.5s;
     }
 }
 
