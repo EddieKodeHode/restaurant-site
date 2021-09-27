@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300;700&display=swap');
 
+html, body {
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* For some reason overflow-y: auto; fixed the footer issue. */
+
 body {
     background-color: rgb(90, 25, 20);
     color: #f5f5f5;
@@ -7,8 +14,6 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
     background-image: url(../images/food2.jpg);
     background-size: cover;
     background-position: center;
@@ -162,14 +167,33 @@ main {
 /* Forms */
 
 
+/* Menu */
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menuItem {
+    border: 1px solid red;
+    line-height: 0.5em;
+}
+
+.menuItem p {
+    font-size: 0.75rem;
+}
+
+.menuItem img {
+    height: 100px;
+}
 
 /* Footer */
 
 footer {
     display: flex;
-    /* position: fixed; */
+    position: absolute;
     width: 100%;
-    /* bottom: 0; */
+    bottom: 0;
     justify-content: space-between;
     background-color: rgb(0,0,0);
     z-index: 4;
