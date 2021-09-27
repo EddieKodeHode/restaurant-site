@@ -25,8 +25,32 @@
     </header>
 
     <main>
+        <h3>Booking</h3>
+        <p>Fill out this form to reserve a table with us</p>
 
+        <form>
+            <label for="name"><strong>Name of person booking</strong></label><br>
+            <input type="text" id="name" name="name"><br>
 
+            <p><strong>How many guests?</strong></p>
+            <select>
+                <option value=”one”>1</option>
+                <option value=”two”>2</option>
+                <option value=”three”>3</option>
+                <option value=”four”>4</option>
+                <option value=”five”>5</option>
+                <option value=”six”>6</option>
+            </select>
+            <p><em>We only allow up to 6 guests per reservation.</em></p>
+
+            <p><strong>Select a date:</strong></p>
+            <p>(Insert calendar here if possible to make with only css and html)</p>
+
+            <label for="extra"><strong>Any specific requests?</strong></label><br>
+            <textarea id="extra" name="extra" rows="4" cols="30">ex. table by the window</textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
     </main>
     
 
