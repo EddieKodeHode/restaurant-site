@@ -1,0 +1,13 @@
+@media print {
+    body {
+        background-color: white;
+        background-image: none;
+    }
+
+    img {
+        width: 0;
+        height: 0;
+    }
+}
+
+/* WIP */

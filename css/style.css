@@ -193,6 +193,12 @@ main {
     height: 100px;
 }
 
+.styled {
+    border-bottom: 1px dashed;
+    padding-bottom: 1em;
+}
+
+
 
 @media (min-width: 576px) {
     main {
@@ -255,4 +261,8 @@ footer p {
 
 /* Errors that need fixed, maybe
 FIXED   1. Banners selection expands too far down. If I change height BG image suffers.
-FIXED   2. Make footer actually stick to the bottom*/
+FIXED   2. Make footer actually stick to the bottom
+        3. Make a "print" page for Menu items
+        4. Fix up Menu, make organized.
+        5. Add more choices in reservations.html
+        6. Make a simple calendar? might be hard.*/
