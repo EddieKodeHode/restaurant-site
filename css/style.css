@@ -230,6 +230,28 @@ footer p {
     }
 }
 
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgb(0,0,0);
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f5f5f5;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 /* Errors that need fixed, maybe
 FIXED   1. Banners selection expands too far down. If I change height BG image suffers.
