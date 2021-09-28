@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="icon" href="images/favicon.png">
     <title>Reservations</title>
 </head>
@@ -25,15 +26,21 @@
         </nav>
     </header>
 
+    <div id="background"></div>
+
     <main>
         <h3>Booking</h3>
         <p>Fill out this form to reserve a table with us</p>
 
-        <form action="order-confirmed.html">
-            <label for="name"><strong>Name of person booking</strong></label><br>
-            <input type="text" id="name" name="name"><br>
+        <form action="order-confirmed.html" class="spaceTop">
+            <label for="name"><strong>Name</strong></label><br>
+            <input type="text" id="name" name="name" class="input"><br>
 
-            <p><strong>How many guests?</strong></p>
+            <label for="email"><strong>Email</strong></label><br>
+            <input type="text" id="email" name="email" class="input"><br>
+
+            <p class="spaceTop"><strong>How many guests?</strong></p>
+            <p><em>We only allow up to 6 guests per reservation.</em></p>
             <select>
                 <option value=”one”>1</option>
                 <option value=”two”>2</option>
@@ -42,15 +49,16 @@
                 <option value=”five”>5</option>
                 <option value=”six”>6</option>
             </select>
-            <p><em>We only allow up to 6 guests per reservation.</em></p>
-
-            <p><strong>Select a date:</strong></p>
-            <p>(Insert calendar here if possible to make with only css and html)</p>
+            <br>
 
             <label for="extra"><strong>Any specific requests?</strong></label><br>
-            <textarea id="extra" name="extra" rows="4" cols="30">ex. table by the window</textarea><br>
+            <textarea id="extra" name="extra" rows="4" cols="30" class="input">ex. table by the windows</textarea><br>
 
-            <input type="submit" value="Submit">
+            <p class="spaceTop"><strong>Select a date:</strong></p>
+            <p>(Insert calendar here if possible to make with only css and html)</p>
+
+
+            <input type="submit" value="Submit" class="spaceTop">
         </form>
     </main>
     

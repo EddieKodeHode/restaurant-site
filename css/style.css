@@ -14,6 +14,16 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    filter: blur(4px);
+    height: 100vh;
+    width: 100vw;
     background-image: url(../images/food2.jpg);
     background-size: cover;
     background-position: center;
@@ -21,12 +31,7 @@ body {
     background-attachment: fixed;
 }
 
-@media (min-width: 576px) {
-    body {
-        background-size: cover;
-        background-position: center
-    }
-}
+
 
 /* TITLE */
 
@@ -162,54 +167,6 @@ main {
     main {
         max-width: 26em;
     }
-}
-
-/* Forms */
-
-
-/* Menu */
-
-.menu {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.menuItem {
-    line-height: 0;
-    margin: 1em;
-}
-
-.menuItem p {
-    font-size: 0.75rem;
-}
-
-.menuItem strong {
-    font-size: 1rem;
-    line-height: 1.5em;
-}
-
-.menuItem img {
-    height: 100px;
-}
-
-.styled {
-    border-bottom: 1px dashed;
-    padding-bottom: 1em;
-}
-
-
-
-@media (min-width: 576px) {
-    main {
-        min-width: 50%;
-    }
-
-    .menu {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
 }
 
 /* Footer */

@@ -1,0 +1,31 @@
+.input {
+    color: #202020;
+}
+
+select {
+    margin-bottom: 2em;
+}
+
+em {
+    font-size: 0.75rem;
+}
+
+main p {
+    margin: 0;
+}
+
+.spaceTop {
+    margin-top: 1.5em;
+}
+
+
+@media (min-width:576px) {
+    .input {
+        width: 20em;
+    }
+
+    #extra {
+        width: 25em;
+    }
+
+}
