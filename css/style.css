@@ -23,7 +23,7 @@ body {
     z-index: -2;
     filter: blur(4px);
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-image: url(../images/food2.jpg);
     background-size: cover;
     background-position: center;
