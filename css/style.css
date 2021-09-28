@@ -29,6 +29,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    animation: blur;
+    animation-duration: 1.5s;
+}
+
+@keyframes blur {
+    0% {filter: blur(0px)}
+    25% {filter: blur(0px)}
+    100% {filter: blur(4px)}
 }
 
 
@@ -40,6 +48,9 @@ header {
     height: 12em;
     z-index: 3;
     background: linear-gradient(180deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0) 100%);
+    position: relative;
+    animation: dropIn;
+    animation-duration: 2.5s;
 }
 
 .title {
@@ -57,6 +68,12 @@ header {
     margin: 0 auto;
     padding: 0.5em;
     width: 13em;
+}
+
+@keyframes dropIn {
+    0% {top:-150px}
+    20% {top:-150px}
+    100% {top:0}
 }
 
 
