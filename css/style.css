@@ -50,7 +50,7 @@ header {
     background: linear-gradient(180deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0) 100%);
     position: relative;
     animation: dropIn;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
 
 .title {
@@ -216,22 +216,18 @@ footer p {
 
 /* Scrollbar */
 
-/* width */
 ::-webkit-scrollbar {
     width: 0.5em;
 }
-  
-  /* Track */
+
 ::-webkit-scrollbar-track {
     background: rgb(0,0,0);
 }
-  
-  /* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #f5f5f5;
 }
-  
-  /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
@@ -241,6 +237,4 @@ footer p {
 FIXED   1. Banners selection expands too far down. If I change height BG image suffers.
 FIXED   2. Make footer actually stick to the bottom
         3. Make a "print" page for Menu items
-        4. Fix up Menu, make organized.
-        5. Add more choices in reservations.html
-        6. Make a simple calendar? might be hard.*/
+        4. Make a simple calendar? might be hard.*/
