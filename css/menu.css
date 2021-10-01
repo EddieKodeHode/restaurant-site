@@ -42,13 +42,60 @@
 }
 
 @media print {
+    
+    nav li {
+        color: rgba(0,0,0,0);
+    }
+
+    header {
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        height: 2.5em;
+    }
+
     body {
         background-color: white;
         background-image: none;
     }
 
-    img {
-        width: 0;
-        height: 0;
+    main {
+        color: black;
+        width: 90%;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menuItem {
+        margin: 0 1em;
+        padding: 0;
+    }
+
+    .menuItem p {
+        font-size: 0.5rem;
+    }
+
+    .menuItem h3 {
+        font-size: 0.75rem;
+    }
+
+    .menuItem strong {
+        font-size: 0.75rem;
+    }
+
+    .menuItem img {
+        height: 0px;
+        width: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        color: black;
     }
 }
+
+/* I FINALLY GOT THE PRINT TO LOOK OKAY!!!!!! */

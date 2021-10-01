@@ -29,15 +29,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: blur;
-    animation-duration: 1.5s;
+    /* animation: blur;
+    animation-duration: 1.5s; */
 }
 
-@keyframes blur {
+/* Originally intended on a "blur bg on entry" effect but after reflecting on it, it just makes me dizzy. Left it in to show that it does work. */
+
+/* @keyframes blur {
     0% {filter: blur(0px)}
     25% {filter: blur(0px)}
     100% {filter: blur(4px)}
-}
+} */
 
 
 
@@ -109,7 +111,7 @@ nav a {
     nav a:hover,
     nav a:focus {
     color: #f5d000;
-}
+    }
 }
 
 
@@ -236,5 +238,5 @@ footer p {
 /* Errors that need fixed, maybe
 FIXED   1. Banners selection expands too far down. If I change height BG image suffers.
 FIXED   2. Make footer actually stick to the bottom
-        3. Make a "print" page for Menu items
-        4. Make a simple calendar? might be hard.*/
+FIXED   3. Make a "print" page for Menu items
+GAVE UP 4. Make a simple calendar? might be hard.*/
